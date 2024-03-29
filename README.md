@@ -9,12 +9,13 @@ A forward-facing VL53L4CD time-of-flight ranging sensor is used for look-ahead
 
 ## Pin Descriptions
 
-| Pin number | Configuration | Function | Description |
+| STM32F446RE Pin number | Configuration | Name | Description |
 |------------|---------------|----------|-------------|
 | | PWM Output | LMotor_A | Left motor PWM signal 1 |
 | | PWM Output | LMotor_B | Left motor PWM signal 2 |
 | | PWM Output | RMotor_A | Right motor PWM signal 1 |
 | | PWM Output | RMotor_B | Right motor PWM signal 2 |
+| | GPIO Output | Motors_EN | DRM8833 Enable line |
 | | GPIO Output | IR_Front_L_Pulse | Front left IR emitter pulse enable |
 | | GPIO Output | IR_Front_R_Pulse | Front right IR emitter pulse enable |
 | | GPIO Output | IR_L_Pulse | Left IR emitter pulse enable |
@@ -42,4 +43,7 @@ A forward-facing VL53L4CD time-of-flight ranging sensor is used for look-ahead
 | | GPIO Output | LED1 | LED 1 Output |
 | | GPIO Output | LED2 | LED 2 Output |
 | | ADC | VBATT | Battery voltage input |
+| | SWDIO | SWDIO | Serial Wire Debug Data |
+| | SWDCLK | SWDCLK | Serial Wire Debug Clock |
+
 
