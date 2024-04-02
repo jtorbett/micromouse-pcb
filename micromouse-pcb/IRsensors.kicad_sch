@@ -1940,7 +1940,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 182.88 46.9899 0)
 			(effects
 				(font
@@ -2021,7 +2021,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "50R"
 			(at 78.74 26.67 90)
 			(effects
 				(font
@@ -2262,7 +2262,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "10uF"
 			(at 113.03 57.5309 0)
 			(effects
 				(font
@@ -2422,7 +2422,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 204.47 60.9599 0)
 			(effects
 				(font
@@ -2504,7 +2504,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 53.34 73.6599 0)
 			(effects
 				(font
@@ -2663,7 +2663,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 45.72 54.61 90)
 			(effects
 				(font
@@ -2904,7 +2904,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "3R3"
 			(at 87.63 35.5599 0)
 			(effects
 				(font
@@ -3162,7 +3162,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 182.88 74.9299 0)
 			(effects
 				(font
@@ -3244,7 +3244,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "710mR"
 			(at 87.63 76.1999 0)
 			(effects
 				(font
