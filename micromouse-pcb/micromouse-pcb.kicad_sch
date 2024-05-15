@@ -3738,14 +3738,15 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_MEC_5E"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0.635 5.715 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3753,8 +3754,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3762,7 +3763,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3770,8 +3771,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-				(at 0 7.62 0)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3779,7 +3780,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3797,18 +3798,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_MEC_5E_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -1.778 2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -3820,7 +3812,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.286 3.81) (xy 2.286 3.81)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -3832,31 +3824,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3867,7 +3835,7 @@
 					)
 				)
 				(circle
-					(center 1.778 2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -3878,7 +3846,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -3896,7 +3864,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -3906,42 +3874,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4295,22 +4227,10 @@
 		(uuid "033ca6e3-af3f-48a1-8526-02ca2ce454da")
 	)
 	(junction
-		(at 72.39 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04a5d2d9-dd4c-4ffa-a7a5-6fe5756cf9a4")
-	)
-	(junction
 		(at 265.43 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "052d7fac-788e-4ee1-a401-8e4f4b07f4a0")
-	)
-	(junction
-		(at 53.34 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0699642b-0033-46f1-ba3c-b09992b8f68c")
 	)
 	(junction
 		(at 59.69 171.45)
@@ -4331,12 +4251,6 @@
 		(uuid "205e51dd-6abe-4a26-bdfd-a0eeca7479f3")
 	)
 	(junction
-		(at 72.39 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "222ff123-5ab0-42d0-9d74-39125e6a7fdd")
-	)
-	(junction
 		(at 130.81 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4347,18 +4261,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b9946fb-3006-4fc4-b187-e4860d70a295")
-	)
-	(junction
-		(at 95.25 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30954ef8-0a90-4420-b7a3-304173fdf78c")
-	)
-	(junction
-		(at 85.09 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "329529ed-505f-485f-b0b4-dfaba5bcb6c1")
 	)
 	(junction
 		(at 144.78 31.75)
@@ -4373,10 +4275,22 @@
 		(uuid "3e134e67-4f37-426a-bcdc-162decd349e7")
 	)
 	(junction
+		(at 82.55 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4229a1c3-3c08-4f49-92cb-8978827e8cad")
+	)
+	(junction
 		(at 184.15 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b2f06b8-1180-406b-9cf4-e353c3b915bc")
+	)
+	(junction
+		(at 82.55 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b442983-4c02-4d1e-a62b-debc46d2c0cf")
 	)
 	(junction
 		(at 128.27 44.45)
@@ -4403,6 +4317,12 @@
 		(uuid "57798a57-95f1-411a-9b55-d49812410b21")
 	)
 	(junction
+		(at 95.25 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62c9edc6-f6ff-4e3e-b5bf-6f8d9b48e788")
+	)
+	(junction
 		(at 133.35 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4413,6 +4333,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e4f8f0d-c3db-4454-aeaf-c9be14f13b30")
+	)
+	(junction
+		(at 53.34 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ed5ceef-91ae-4631-803a-e0053d0502eb")
 	)
 	(junction
 		(at 153.67 31.75)
@@ -4433,22 +4359,10 @@
 		(uuid "8eb3517e-cdec-41d4-b943-84e636ae5274")
 	)
 	(junction
-		(at 72.39 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8fbe9d52-8c0c-4dd5-b851-faac3f9cdaf4")
-	)
-	(junction
 		(at 237.49 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "994f7ada-ddeb-4ed5-bcca-902f4d4e1d35")
-	)
-	(junction
-		(at 82.55 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a21cf10f-1a72-4978-bd42-2965384190da")
 	)
 	(junction
 		(at 100.33 171.45)
@@ -4457,16 +4371,10 @@
 		(uuid "a2f06f45-2d4b-4cd4-9924-6d6393c4db7e")
 	)
 	(junction
-		(at 82.55 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a55543c1-ec56-4b18-9b70-e5d0be20f3e7")
-	)
-	(junction
 		(at 63.5 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d4c3ffb9-55af-408e-a848-9371da54f178")
+		(uuid "e71c7ba5-3858-4b79-8168-85b1ea8c7373")
 	)
 	(junction
 		(at 173.99 31.75)
@@ -4485,6 +4393,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f96bc94e-3ea3-4582-8781-aa4e30d48a02")
+	)
+	(junction
+		(at 72.39 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f97ad849-02c8-4482-8985-d75185760b3c")
 	)
 	(wire
 		(pts
@@ -5268,16 +5182,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 95.25) (xy 72.39 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec4c60d-ef7b-4861-ad93-3342482f1bbe")
-	)
-	(wire
-		(pts
 			(xy 148.59 59.69) (xy 157.48 59.69)
 		)
 		(stroke
@@ -5768,7 +5672,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 107.95) (xy 72.39 110.49)
+			(xy 72.39 95.25) (xy 72.39 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5808,7 +5712,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 95.25) (xy 88.9 95.25)
+			(xy 82.55 95.25) (xy 90.17 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5895,16 +5799,6 @@
 			(type default)
 		)
 		(uuid "e34cac7c-9fb4-4980-b920-1fe5d2eb035e")
-	)
-	(wire
-		(pts
-			(xy 72.39 110.49) (xy 72.39 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e603463f-b974-44aa-890e-925ac5404904")
 	)
 	(wire
 		(pts
@@ -5998,16 +5892,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 97.79) (xy 72.39 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7287bca-1c12-4ae0-9711-0fb3c18f90da")
-	)
-	(wire
-		(pts
 			(xy 148.59 80.01) (xy 157.48 80.01)
 		)
 		(stroke
@@ -6025,6 +5909,16 @@
 			(type default)
 		)
 		(uuid "f937df18-6f80-479d-943e-9adb1b0a002d")
+	)
+	(wire
+		(pts
+			(xy 72.39 107.95) (xy 72.39 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faad041c-4f97-47c7-93e8-0e5541e04c42")
 	)
 	(wire
 		(pts
@@ -6925,7 +6819,7 @@
 		(uuid "ff6dd1a7-29cf-472b-a65b-55ad803a189f")
 	)
 	(label "SW1"
-		(at 85.09 95.25 0)
+		(at 90.17 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6961,7 +6855,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 161.29 114.808 90)
 			(effects
 				(font
@@ -7068,6 +6962,74 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 77.47 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "037151c0-cac0-4d49-9712-f32152e181c1")
+		(property "Reference" "SW2"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 77.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54cb2681-8542-4902-a90f-7a57e58b27cd")
+		)
+		(pin "1"
+			(uuid "421492fe-a1d1-4c31-a47a-28184e525706")
+		)
+		(instances
+			(project "micromouse-pcb"
+				(path "/08547750-41af-410e-a348-e09ab2e21979"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7230,7 +7192,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 161.29 117.348 90)
 			(effects
 				(font
@@ -7298,7 +7260,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 144.78 165.1 0)
 			(effects
 				(font
@@ -7405,80 +7367,6 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 90.17 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15cbdc4b-63e5-4ac0-8f63-b650bcab665c")
-		(property "Reference" "SW2"
-			(at 90.17 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 90.17 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
-			(at 90.17 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 90.17 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 90.17 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09d670d8-58ff-4750-a1c7-ef04a79e8f98")
-		)
-		(pin "3"
-			(uuid "8956eced-da0e-4254-9459-39c691a18793")
-		)
-		(pin "4"
-			(uuid "5452ed91-32c3-45f1-91e7-5cf9779b0bcb")
-		)
-		(pin "2"
-			(uuid "649802f3-61a5-4a03-8da7-68ef6fe785e4")
-		)
-		(instances
-			(project "micromouse-pcb"
-				(path "/08547750-41af-410e-a348-e09ab2e21979"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7769,6 +7657,74 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 77.47 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fd501b3-1554-45cf-916a-e294df932a62")
+		(property "Reference" "SW1"
+			(at 77.47 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ"
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 77.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6bc44504-c3ac-48b3-9a73-81f18e785efd")
+		)
+		(pin "1"
+			(uuid "3e62d553-6e9c-42fd-b55e-5ef841410c66")
+		)
+		(instances
+			(project "micromouse-pcb"
+				(path "/08547750-41af-410e-a348-e09ab2e21979"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8568,80 +8524,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 58.42 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50ca734d-8db9-4de7-a8c6-d74917ed98c6")
-		(property "Reference" "SW1"
-			(at 58.42 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 58.42 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
-			(at 58.42 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 58.42 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 58.42 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9d73918-543d-4df8-81b0-ce3eef3d3983")
-		)
-		(pin "4"
-			(uuid "839dcad0-91e8-4872-9eae-ddfd95da3ffb")
-		)
-		(pin "2"
-			(uuid "6d24fb64-43b3-45f6-9df7-73b9a8278752")
-		)
-		(pin "3"
-			(uuid "c498b161-92da-498c-976f-113e8aeaf4a8")
-		)
-		(instances
-			(project "micromouse-pcb"
-				(path "/08547750-41af-410e-a348-e09ab2e21979"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 184.15 39.37 0)
 		(unit 1)
@@ -8803,7 +8685,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 134.62 178.308 90)
 			(effects
 				(font
@@ -9209,7 +9091,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
 			(at 72.39 143.51 0)
 			(effects
 				(font
@@ -9666,6 +9548,74 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 90.17 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b9a88d2-ebbf-4cd8-b305-eca71c6e2fc8")
+		(property "Reference" "SW6"
+			(at 90.17 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 90.17 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ"
+			(at 90.17 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 90.17 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "396a4665-dc3d-4f93-b531-3de9f803fc0b")
+		)
+		(pin "1"
+			(uuid "bf9df168-8321-4684-b063-29d5789fd037")
+		)
+		(instances
+			(project "micromouse-pcb"
+				(path "/08547750-41af-410e-a348-e09ab2e21979"
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -10210,7 +10160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 134.62 163.322 90)
 			(effects
 				(font
@@ -10414,7 +10364,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Littelfuse-LVR200"
+		(property "Footprint" "Fuse:Fuse_1210_3225Metric"
 			(at 57.15 170.18 0)
 			(effects
 				(font
@@ -10650,6 +10600,74 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 58.42 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b142849b-5ed9-44a2-9e7e-f6b6d83ef2c7")
+		(property "Reference" "SW5"
+			(at 58.42 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 58.42 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ"
+			(at 58.42 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 58.42 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08e6799f-69ce-4fc2-b596-fd5b0aa63bbe")
+		)
+		(pin "1"
+			(uuid "8261bcb1-f561-4b1a-a262-caee8e9d8a73")
+		)
+		(instances
+			(project "micromouse-pcb"
+				(path "/08547750-41af-410e-a348-e09ab2e21979"
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -11279,7 +11297,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 72.39 125.73 0)
 			(effects
 				(font
@@ -11391,80 +11409,6 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 77.47 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0741b69-4a0c-41de-ab83-548839329df8")
-		(property "Reference" "SW4"
-			(at 77.47 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 77.47 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
-			(at 77.47 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 77.47 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 77.47 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "268170cf-a33a-4d2f-b1e4-10237f68ee47")
-		)
-		(pin "3"
-			(uuid "53a9add6-b72f-49d8-b36a-6f755858d206")
-		)
-		(pin "4"
-			(uuid "d5112bf9-4857-4254-91bb-6239cf62617f")
-		)
-		(pin "2"
-			(uuid "f55039c5-6a94-4009-85ff-50c0e5c46d6e")
-		)
-		(instances
-			(project "micromouse-pcb"
-				(path "/08547750-41af-410e-a348-e09ab2e21979"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -11836,7 +11780,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 144.78 176.53 0)
 			(effects
 				(font
@@ -12007,80 +11951,6 @@
 			(project "micromouse-pcb"
 				(path "/08547750-41af-410e-a348-e09ab2e21979"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 77.47 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fec92133-a93d-4456-ad02-3d41a61213a2")
-		(property "Reference" "SW3"
-			(at 77.47 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 77.47 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
-			(at 77.47 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 77.47 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 77.47 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ac6118e-04d6-47b8-97bd-a595c8aa80a5")
-		)
-		(pin "3"
-			(uuid "7cb0df9c-1250-4f71-b60e-50bccb1851a8")
-		)
-		(pin "4"
-			(uuid "bdf899dd-6949-47a6-a786-05a111bff2c1")
-		)
-		(pin "2"
-			(uuid "3150a888-1783-45b2-9f40-7cbffe45445a")
-		)
-		(instances
-			(project "micromouse-pcb"
-				(path "/08547750-41af-410e-a348-e09ab2e21979"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
